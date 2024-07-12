@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Web Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .background img {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            opacity: 0.6;
+            animation: float 20s infinite alternate;
+        }
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-20px); }
+        }
+        .content {
+            position: relative;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: white;
+        }
+        p {
+            font-size: 1.2em;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="https://e0.pxfuel.com/wallpapers/552/773/desktop-wallpaper-wanda-maximoff-oficcial-poster-infinity-war-elizabeth-olsen-scarlet-witch-scarlet-witch-marvel.jpg" style="top: 10%; left: 10%;">
+        <img src="https://e0.pxfuel.com/wallpapers/80/633/desktop-wallpaper-wanda-maximoff-artwork-in-resolution-elizabeth-olsen-scarlet-witch-scarlet-witch-scarlet-witch-marvel-wanda-thumbnail.jpg" style="top: 20%; left: 70%;">
+        <img src="https://e0.pxfuel.com/wallpapers/443/158/desktop-wallpaper-elizabeth-olsen-lip-wanda-marvel-thumbnail.jpg" style="top: 60%; left: 20%;">
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/844/586/desktop-wallpaper-lockscreens-marvel-wanda-maximoff-thumbnail.jpg" style="top: 80%; left: 60%;">
+    </div>
+    <div class="content">
+        <h1>The Avengers</h1>
+        <p>The Avengers are Earth's mightiest heroes, brought together to combat the threats that no single hero could withstand. Led by Captain America, the team includes Iron Man, Thor, Hulk, Black Widow, and Hawkeye. They have fought numerous battles to protect the planet from extraterrestrial invaders, mad titans, and rogue AI. Their bravery, teamwork, and unyielding spirit have made them legends, inspiring countless individuals around the globe to stand up for what is right.</p>
+    </div>
+</body>
+</html>
